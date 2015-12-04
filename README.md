@@ -19,11 +19,11 @@ Neccessery steps for the program to run successifully :
 
 1. Create a Unisim/Hysis spreadsheet with a name "Objective" which should contain the value of the objective function in cell A2 e.g.
 
-	| Tables        | Are           | Cool  |
-	| ------------- |:-------------:| -----:|
-	| col 3 is      | right-aligned | $1600 |
-	| col 2 is      | centered      |   $12 |
-	| zebra stripes | are neat      |    $1 |
+	|	A      	|	B	|	C  	|
+	|:-------------:|:-------------:|:-------------:|
+	|	-	|  -	|	|		|
+	| 	f(x)    |  -    |	|		|
+	|	-	|	-	|    		|
 	
       		A   	B			
 	1	-	-		
