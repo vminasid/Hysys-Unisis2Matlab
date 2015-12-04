@@ -19,9 +19,9 @@ Neccessery steps for the program to run successifully :
 
 1. Create a Unisim/Hysis spreadsheet with a name "Objective" which should contain the value of the objective function in cell A2 e.g.
 	
-      	A   B			
-	1	  -	  -		
-	2	 f(x) -
+      		A   	B			
+	1	-	-		
+	2	f(x)	-
 
 2. Create a Unisim/Hysis spreadsheet with a name "Constraints" which should have the following structure: 
  		A		      B		-	
