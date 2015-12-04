@@ -62,7 +62,7 @@ As you may have noticed the first row in all the spreadsheets isn't used by the 
 	|	      	|	A	|	B  	|	C	|	D      	|	E	|
 	|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 	|	1	|Inputs		|Upper bounds	|Lower bounds	|Initial Values	|	Units	|
-	| 	2    	|	x_1	|	ub(1)	|	lb(1)	|	x0(1)	|Unit of x_1	|
+	| 	2    	|	x_1	|	ub(1)	|	lb(1)	|	x0(1)	|	Unit of x_1|
 	|	|	|	|	|	|	|	|	|	|	|	|	|	
        
 
