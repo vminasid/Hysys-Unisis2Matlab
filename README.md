@@ -19,33 +19,38 @@ Neccessery steps for the program to run successifully :
 
 1. Create a Unisim/Hysis spreadsheet with a name "Objective" which should contain the value of the objective function in cell A2 e.g.
 
-	|	A      	|	B	|	C  	|
+	|	      	|	A	|	B  	|
 	|:-------------:|:-------------:|:-------------:|
-	|	-	|  -	|	|		|
-	| 	f(x)    |  -    |	|		|
-	|	-	|	-	|    		|
+	|	1	|	-	|	-	|
+	| 	2    	|	f(x)	|	-	|
+	|	3	|	-	|	-	|
 	
-      		A   	B			
-	1	-	-		
-	2	f(x)	-
 
-2. Create a Unisim/Hysis spreadsheet with a name "Constraints" which should have the following structure: 
- 		A		      B		-	
-	1	-		      -		-
-	2	g_1(x)	h_1(x)
-	3	g_2(x)	h_2(x)
-	|	 |		    |
-	k	g_k(x)		|
-	|	  -		    |
-	m	  -		  h_m(x)
+2. Create a Unisim/Hysis spreadsheet with a name "Constraints", which should have the following structure: 
 
+	|	      	|	A	|	B  	|
+	|:-------------:|:-------------:|:-------------:|
+	|	1	|	-	|	-	|
+	| 	2    	|	g_1(x)	|	h_1(x)	|
+	|	3	|	g_2(x)	|	h_2(x)	|
+	|	|	|	|	|	|	|
+	| 	k    	|	g_k(x)	|	|	|
+	|	|	|	|	|	|	|
+	|	m	|	|	|	h_m(x)	|
+	
+	
+ 
 3. Create a Unisim/Hysis spreadsheet with a name "Inputs" which should have the following structure: 
- 		A		    B		      C		    D		        E
-	1	-		    -		      -		    -		        -
-	2	x_1		ub(1) 		lb(1)		x0(1)	   Units of x_1
-		x_2		ub(2) 		lb(2)		x0(2)	   Units of x_2
-	|	 |		  |		      |		    |		        |
-	n	x_n		ub(n) 		lb(n)		x0(n)	   Units of x_n 
+
+	
+	|	      	|	A	|	B  	|	C	|	D      	|	E	|
+	|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+	|	1	|	-	|	-	|	-	|	-	|	-	|
+	| 	2    	|	x_1	|	ub(1)	|	lb(1)	|	x0(1)	|Unit of x_1	|
+	|	3	|	x_2	|	ub(2)	| 	lb(1)   | 	x0(2)	|Unit of x_2	|	
+	|	|	|	|	|	|	|	|	|	|	|	|	|	
+	| 	n    	|	x_n	|	ub(n)	|	lb(n)	|	x0(n)	|Unit of x_n	|
+
 
 4. Make sure that the Unisim/Hysys application is running and your process model is loaded. Then run the script. If everything was done properly, you should be able to see a new Matlab script generated, that contains the objective function, the nonlinear constraints function and a script for running fmincon. You just need to run that script and it will optimize your Hysis/Unisis process model.
 
@@ -53,10 +58,13 @@ Neccessery steps for the program to run successifully :
 ## A few general comments:
  
 As you may have noticed the first row in all the spreadsheets isn't used by the programm so it can be used for naming the columns e.g.
- 		A		B		C		D		 E
-	1     Inputs	   Upper bounds	    Lower bounds   Initial Values     Units
-	2	x_1		ub(1		lb(1)		x0(1)		C
-	3	|		|		|		|		|	       
+
+	|	      	|	A	|	B  	|	C	|	D      	|	E	|
+	|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+	|	1	|Inputs		|Upper bounds	|Lower bounds	|Initial Values	|	Units	|
+	| 	2    	|	x_1	|	ub(1)	|	lb(1)	|	x0(1)	|Unit of x_1	|
+	|	|	|	|	|	|	|	|	|	|	|	|	|	
+       
 
 The program scans the Unisim/Hysis spreadsheet columns starting from the second row till it encounters an empty cell. 
 So the safest thing would be to use additional columns for calculations or comments but if you want to use the rest of the column cells for calculations, make sure to leave an empty cell at the end before using the rest of the cells.
