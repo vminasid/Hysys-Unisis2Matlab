@@ -1,6 +1,6 @@
 # Hysys/Unisim interfaced with Matlab's Optimization Toolbox
 This script auto-generates the necessary MATLAB code in order to interface an existing Unisim/Hysis model with MATLAB's Optimization Toolbox. 
-$x^2$
+$$x^2$$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This program generates Non-Linear Programming MATLAB code from an existing Unisim/Hysis model. 
 %
