@@ -57,7 +57,7 @@ So the safest thing would be to use additional columns for calculations or comme
  Also make sure that you specify the correct unit for each input (that would the unit that corresponds to the values that you use to specify the bounds) since the program scales all the inputs to [0,1]
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License V3 as published by
 % the Free Software Foundation
@@ -71,4 +71,4 @@ So the safest thing would be to use additional columns for calculations or comme
 %
 % Copyright (C) 2012  Vlad Minasides 
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
