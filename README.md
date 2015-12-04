@@ -1,2 +1,2 @@
 # Hysys-Unisis2Matlab
-This program generates Non-Linear Programming MATLAB code from an existing Unisim/Hysis model. 
+This script auto-generates required MATLAB code in order to interface an existing Unisim/Hysis model with MATLAB's Optimization Toolbox. 
