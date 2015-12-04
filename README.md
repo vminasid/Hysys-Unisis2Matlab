@@ -4,7 +4,7 @@ This script auto-generates the necessary MATLAB code in order to interface an ex
 This program generates Non-Linear Programming MATLAB code from an existing Unisim/Hysis model. 
 in the form of:
 
- 	min f(x)    subject to:
+ 	min f(x)    	subject to:
 		 	lb <= x <= ub , x in R^n 	# Input bounds  
 			h(x) = 0 , h in R^m		# Equality constraints
 			g(x)<= 0 , g in R^k	 	# Inequality constraints
@@ -36,7 +36,7 @@ Neccessery steps for the program to run successifully :
  		A		    B		      C		    D		        E
 	1	-		    -		      -		    -		        -
 	2	x_1		ub(1) 		lb(1)		x0(1)	   Units of x_1
-	3 x_2		ub(2) 		lb(2)		x0(2)	   Units of x_2
+		x_2		ub(2) 		lb(2)		x0(2)	   Units of x_2
 	|	 |		  |		      |		    |		        |
 	n	x_n		ub(n) 		lb(n)		x0(n)	   Units of x_n 
 
@@ -46,10 +46,10 @@ Neccessery steps for the program to run successifully :
 ## A few general comments:
  
 As you may have noticed the first row in all the spreadsheets isn't used by the programm so it can be used for naming the columns e.g.
- 		       A		        B		              C		           D		          E
+ 		A		B		C		D		 E
 	1     Inputs	   Upper bounds	    Lower bounds   Initial Values     Units
-	2	      x_1		      ub(1) 		        lb(1)		      x0(1)		          C
-	3        |	          |		              |		          |		            |	       
+	2	x_1		ub(1		lb(1)		x0(1)		C
+	3	|		|		|		|		|	       
 
 The program scans the Unisim/Hysis spreadsheet columns starting from the second row till it encounters an empty cell. 
 So the safest thing would be to use additional columns for calculations or comments but if you want to use the rest of the column cells for calculations, make sure to leave an empty cell at the end before using the rest of the cells.
