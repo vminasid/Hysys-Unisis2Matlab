@@ -37,7 +37,6 @@ Neccessery steps for the program to run successifully :
 	| 	k    	|	g_k(x)	|	|	|
 	|	|	|	|	|	|	|
 	|	m	|	|	|	h_m(x)	|
-	|:-------------:|:-------------:|:-------------:|
 	
 	
  
@@ -59,8 +58,7 @@ Neccessery steps for the program to run successifully :
 ## A few general comments:
  
 As you may have noticed the first row in all the spreadsheets isn't used by the programm so it can be used for naming the columns e.g.
-
-
+	
 	|	      	|	A	|	B  	|	C	|	D      	|	E	|
 	|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 	|	1	|Inputs		|Upper bounds	|Lower bounds	|Initial Values	|	Units	|
